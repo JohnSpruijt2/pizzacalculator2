@@ -2,10 +2,11 @@
 // opdracht: Pizza calculator
 // Da vinci college
 
-var numberSmall = prompt("How many small pizza's do you want?")         //variabele en prompt 
-var numberMed = prompt("How many medium pizza's do you want?")          //variabele en prompt 
-var numberLarge = prompt("How many Large pizza's do you want?")         //variabele en prompt 
-var priceTotal = numberSmall*11.99+numberMed*12.99+numberLarge*13.99    //variabele met formule 
+
+const numberSmall = prompt("How many small pizza's do you want?")         //const en prompt 
+const numberMed = prompt("How many medium pizza's do you want?")          //const en prompt 
+const numberLarge = prompt("How many Large pizza's do you want?")         //const en prompt 
+const priceTotal = numberSmall*11.99+numberMed*12.99+numberLarge*13.99    //const met formule 
 var error = false                                                       //error method
 
 document.write("<br><br><br>")    
