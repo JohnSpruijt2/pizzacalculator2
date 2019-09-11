@@ -9,17 +9,17 @@ var priceTotal = numberSmall*11.99+numberMed*12.99+numberLarge*13.99    //variab
 var error = false                                                       //error method
 
 if (numberSmall <0) {                                                   //reactie van kleine pizza's
-    document.write("<font size='5'>An unexpected error has occured, please try again")
+    document.write("<font size='5' face='arial'>An unexpected error has occured, please try again")
     error = true
 }
 else if (numberSmall >0) {
-    document.write("<font size='5'>You choose "+numberSmall+" small pizza's"+"    €"+numberSmall*11.99)
+    document.write("<font size='5' face='arial'>You choose "+numberSmall+" small pizza's     "+"    €"+numberSmall*11.99)
 }
 else if (numberSmall == 0) {
-    document.write("<font size='5'>You choose no small pizza's.")
+    document.write("<font size='5' face='arial'>You choose no small pizza's.     ")
 }
 else {
-    document.write("<font size='5'>Only numbers are allowed.")
+    document.write("<font size='5' face='arial'>Only numbers are allowed.     ")
 }
 
 
@@ -70,7 +70,7 @@ else if (priceTotal >=0) {                                              //last e
             document.write("An unexpected error occured, please try again")
         }
         else {
-            document.write("<h3>Total : </h3>"+'<font size="9">€'+priceTotal+'</font>')   
+            document.write("<h3>Total : </h3>"+'<font size="9">€ '+priceTotal+'</font>')   
         }
      
 }
