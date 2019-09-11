@@ -13,7 +13,7 @@ if (numberSmall <0) {                                                   //reacti
     error = true
 }
 else if (numberSmall >0) {
-    document.write("<font size='5'>You choose "+numberSmall+" small pizza's."+"    €"+numberSmall*11.99)
+    document.write("<font size='5'>You choose "+numberSmall+" small pizza's"+"    €"+numberSmall*11.99)
 }
 else if (numberSmall == 0) {
     document.write("<font size='5'>You choose no small pizza's.")
@@ -22,14 +22,16 @@ else {
     document.write("<font size='5'>Only numbers are allowed.")
 }
 
+
 document.write("<br><br>")                                               //regels overgeslagen
+
 
 if (numberMed <0) {                                                      //reactie van medium pizza's
     document.write("An unexpected error has occured, please try again")
     error = true
 }
 else if (numberMed >0) {
-    document.write("You choose "+numberMed+" medium pizza's."+"    €"+numberMed*12.99)
+    document.write("You choose "+numberMed+" medium pizza's"+"    €"+numberMed*12.99)
 }
 else if (numberMed == 0) {
     document.write("You choose no medium pizza's.")
@@ -38,14 +40,16 @@ else {
     document.write("Only numbers are allowed.")
 }
 
+
 document.write("<br><br>")                                              //regels overgeslagen
+
 
 if (numberLarge <0) {                                                   //reactie van Grote pizza's
     document.write("An unexpected error has occured, please try again")
     error = true
 }
 else if (numberLarge >0) {
-    document.write("You choose "+numberLarge+" Large pizza's."+"    €"+numberLarge*13.99)
+    document.write("You choose "+numberLarge+" Large pizza's"+"    €"+numberLarge*13.99)
 }
 else if (numberLarge == 0){
     document.write("You choose no large pizza's.")
@@ -54,7 +58,10 @@ else {
     document.write("Only numbers are allowed.")
 }
 
+
 document.write("<br><br><br><br><br>")                                  //regels overgeslagen
+
+
 if (priceTotal <0) {                                                    //totale prijs weergeving
     document.write("An unexpected error occured, please try again")
 }
@@ -72,6 +79,7 @@ else {
     error = true
 }
     
+
 if (error == true) {                                                      //alert voor error
     alert("An unexpected error occured please try again")
 }
