@@ -7,17 +7,17 @@ const numberSmall = prompt("How many small pizza's do you want?")         //cons
 const numberMed = prompt("How many medium pizza's do you want?")          //const en prompt 
 const numberLarge = prompt("How many Large pizza's do you want?")         //const en prompt 
 const priceTotal = numberSmall*11.99+numberMed*12.99+numberLarge*13.99    //const met formule 
-var error = false                                                       //error method
+var error = false                                                         //error method
 
 document.write("<br><br><br>")    
 
 
 
 
-if (numberSmall <0) {                                                   //reactie van kleine pizza's
+if (numberSmall <0) {                                                     //reactie van kleine pizza's
     document.write("<font size='5' face='arial'><center>An unexpected error has occured, please try again")
     error = true
-}                                                                       //lettertype van hele pagina veranderd
+}                                                                         //lettertype van hele pagina veranderd
 else if (numberSmall >0) {
     document.write("<font size='5' face='arial'><center>You choose "+numberSmall+" small pizza's     "+"    €"+numberSmall*11.99)
 }
@@ -29,28 +29,28 @@ else {
 }
 
 
-document.write("<br><br>")                                               //regels overgeslagen
+document.write("<br><br>")                                                //regels overgeslagen
 
 
-if (numberMed <0) {                                                      //reactie van medium pizza's
-    document.write("An unexpected error has occured, please try again")  //minder dan 0 pizza's
+if (numberMed <0) {                                                       //reactie van medium pizza's
+    document.write("An unexpected error has occured, please try again")   //minder dan 0 pizza's
     error = true
 }
-else if (numberMed >0) {                                                 //meer dan 0 pizza's
+else if (numberMed >0) {                                                  //meer dan 0 pizza's
     document.write("You choose "+numberMed+" medium pizza's"+"    €"+numberMed*12.99)
 }
-else if (numberMed == 0) {                                              //precies 0 pizza's
+else if (numberMed == 0) {                                                //precies 0 pizza's
     document.write("You choose no medium pizza's.")
 }
-else {                                                                  //iets anders dan cijfers
+else {                                                                    //iets anders dan cijfers
     document.write("Only numbers are allowed.")
 }
 
 
-document.write("<br><br>")                                              //regels overgeslagen
+document.write("<br><br>")                                                //regels overgeslagen
 
 
-if (numberLarge <0) {                                                   //reactie van Grote pizza's
+if (numberLarge <0) {                                                     //reactie van Grote pizza's
     document.write("An unexpected error has occured, please try again")
     error = true
 }
@@ -65,13 +65,13 @@ else {
 }
 
 
-document.write("<br><br><br><br><br>")                                  //regels overgeslagen
+document.write("<br><br><br><br><br>")                                    //regels overgeslagen
 
 
-if (priceTotal <0) {                                                    //totale prijs weergeving
+if (priceTotal <0) {                                                      //totale prijs weergeving
     document.write("An unexpected error occured, please try again")
 }
-else if (priceTotal >=0) {                                              //last error check
+else if (priceTotal >=0) {                                                //last error check
         if (error == true){
             document.write("An unexpected error occured, please try again")
         }
