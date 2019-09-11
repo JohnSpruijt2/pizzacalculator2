@@ -8,18 +8,23 @@ var numberLarge = prompt("How many Large pizza's do you want?")         //variab
 var priceTotal = numberSmall*11.99+numberMed*12.99+numberLarge*13.99    //variabele met formule 
 var error = false                                                       //error method
 
+document.write("<br><br><br>")    
+
+
+
+
 if (numberSmall <0) {                                                   //reactie van kleine pizza's
-    document.write("<font size='5' face='arial'>An unexpected error has occured, please try again")
+    document.write("<font size='5' face='arial'><center>An unexpected error has occured, please try again")
     error = true
-}
+}                                                                       //lettertype van hele pagina veranderd
 else if (numberSmall >0) {
-    document.write("<font size='5' face='arial'>You choose "+numberSmall+" small pizza's     "+"    €"+numberSmall*11.99)
+    document.write("<font size='5' face='arial'><center>You choose "+numberSmall+" small pizza's     "+"    €"+numberSmall*11.99)
 }
 else if (numberSmall == 0) {
-    document.write("<font size='5' face='arial'>You choose no small pizza's.     ")
+    document.write("<font size='5' face='arial'><center>You choose no small pizza's.     ")
 }
 else {
-    document.write("<font size='5' face='arial'>Only numbers are allowed.     ")
+    document.write("<font size='5' face='arial'><center>Only numbers are allowed.     ")
 }
 
 
@@ -27,16 +32,16 @@ document.write("<br><br>")                                               //regel
 
 
 if (numberMed <0) {                                                      //reactie van medium pizza's
-    document.write("An unexpected error has occured, please try again")
+    document.write("An unexpected error has occured, please try again")  //minder dan 0 pizza's
     error = true
 }
-else if (numberMed >0) {
+else if (numberMed >0) {                                                 //meer dan 0 pizza's
     document.write("You choose "+numberMed+" medium pizza's"+"    €"+numberMed*12.99)
 }
-else if (numberMed == 0) {
+else if (numberMed == 0) {                                              //precies 0 pizza's
     document.write("You choose no medium pizza's.")
 }
-else {
+else {                                                                  //iets anders dan cijfers
     document.write("Only numbers are allowed.")
 }
 
