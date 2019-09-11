@@ -19,10 +19,10 @@ if (numberSmall <0) {                                                     //reac
     error = true
 }                                                                         //lettertype van hele pagina veranderd
 else if (numberSmall >0) {
-    document.write("<font size='5' face='arial'><center>You choose "+numberSmall+" small pizza's     "+"    €"+numberSmall*11.99)
+    document.write("<font size='5' face='arial'><center>You chose "+numberSmall+" small pizza's     "+"    €"+numberSmall*11.99)
 }
 else if (numberSmall == 0) {
-    document.write("<font size='5' face='arial'><center>You choose no small pizza's.     ")
+    document.write("<font size='5' face='arial'><center>You chose no small pizza's.     ")
 }
 else {
     document.write("<font size='5' face='arial'><center>Only numbers are allowed.     ")
@@ -37,10 +37,10 @@ if (numberMed <0) {                                                       //reac
     error = true
 }
 else if (numberMed >0) {                                                  //meer dan 0 pizza's
-    document.write("You choose "+numberMed+" medium pizza's"+"    €"+numberMed*12.99)
+    document.write("You chose "+numberMed+" medium pizza's"+"    €"+numberMed*12.99)
 }
 else if (numberMed == 0) {                                                //precies 0 pizza's
-    document.write("You choose no medium pizza's.")
+    document.write("You chose no medium pizza's.")
 }
 else {                                                                    //iets anders dan cijfers
     document.write("Only numbers are allowed.")
@@ -55,10 +55,10 @@ if (numberLarge <0) {                                                     //reac
     error = true
 }
 else if (numberLarge >0) {
-    document.write("You choose "+numberLarge+" Large pizza's"+"    €"+numberLarge*13.99)
+    document.write("You chose "+numberLarge+" Large pizza's"+"    €"+numberLarge*13.99)
 }
 else if (numberLarge == 0){
-    document.write("You choose no large pizza's.")
+    document.write("You chose no large pizza's.")
 }
 else {
     document.write("Only numbers are allowed.")
